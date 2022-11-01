@@ -1,0 +1,47 @@
+article {
+    width: 70%;
+    background-color: #f3f1e8;
+    margin: auto;
+    font-family: 'Bitter', Times, serif;
+    color: #003;
+    padding: 15px;
+}
+
+article h2 {
+    line-height: 6rem;
+}
+
+article p {
+    line-height: 1.5rem;
+}
+
+figure {
+    width: 40%;
+    height: auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.align-left .align-right {
+    display: inline-block;
+}
+
+.align-left {
+    float: left;
+}
+
+.align-right {
+    float: right;
+}
+
+figure.align-left {
+    margin: 15px 15px 15px 0;
+}
+
+figure.align-right {
+    margin: 15px 0 15px 15px;
+}
+

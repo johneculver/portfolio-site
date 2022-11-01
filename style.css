@@ -1,0 +1,208 @@
+/*Full document styling*/
+
+* {
+    box-sizing: border-box;
+    }
+
+
+
+html {
+    font-size: 16px;
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #f3f1e8;
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: 'Bitter', Times, serif;
+}
+
+/*Header Styling*/
+header {
+    height: 80px;
+    background-color: #283550;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #f3f1e8;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+    padding: 30px 0;
+}
+
+nav {
+    min-width: 610px;
+}
+
+a {
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+div.header-content {
+    display: inline-flex;
+    width: 50%;
+    align-items: baseline;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+div.header-content img {
+    height: 75px;
+    width: auto;
+    margin-left: 30px;
+}
+
+header p {
+    margin: 10px 10px 0px -10px;  
+    font-size: 3.5rem;
+    font-weight: 500;
+    font-family: 'Bitter', Times, serif;
+    min-width: 425px;
+}
+
+
+nav ul li {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 15px;
+}
+
+/* Body Styling */
+
+main {
+    position: relative;
+    top: 80px;
+    min-height: calc(100vh - 160px);
+    background-color: #283550;
+    
+}
+
+#intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    justify-items: space-evenly;
+    background-image: linear-gradient(to bottom,rgba(40, 53, 80, 0.7), rgba(40, 53, 80, 0.9)), url(./media/daphnis-blur.png);
+    background-size: fill;position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+   
+}
+
+#intro-img, #intro-text {
+    z-index: 2;
+}
+
+#intro div {
+    margin: 0 30px;
+}
+
+#intro img {
+    max-width: 350px;
+    height: auto;
+    border: 2px solid #f3f1e8;
+    border-radius: 1rem;
+    background-color: #f3f1e8;
+}
+
+p.greeting {
+    /*margin-top: 10px;*/
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+#test{
+    position:relative;
+    top: 120px;
+    height: 300px;
+}
+
+.link-button {
+    height: 3rem;
+    font-size: 1.5rem;
+    text-align: center;
+    vertical-align: middle;
+    width: 15rem;
+    border-radius: 10px;
+    background-color: #f3f1e8;
+    box-shadow: none;
+    border: none;
+    color: #283550;
+}
+
+.link-button:hover, .link-button:active {
+    cursor: pointer;
+}
+
+.link-button:active {
+    background-color: #283550;
+    color:#f3f1e8;
+    border: 1px solid #f3f1e8;
+}
+
+/*
+#intro-text {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    word-wrap: break-word;
+    white-space: normal;
+}
+*/
+
+/* Footer Styling */
+
+footer {
+    background-color: #283550;
+    height: 80px;
+    width: 100%;
+    position: relative;
+    top: 80px;
+}
+
+#footer-border {
+    width: 97%;
+    margin: auto;
+    border-top: 1px solid #878681;
+}
+
+#footer-logo img {
+    height: 30px;
+    width: auto;
+    margin: 22px;
+    z-index: 1;
+}
+
+div.footer {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    padding-right: 30px;
+}
+
+span.footer {
+    display: block;
+    color: #495d86;
+}

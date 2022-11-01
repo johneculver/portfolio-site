@@ -1,0 +1,154 @@
+/* Main Styling */
+html {
+    
+}
+
+main h2, main h3, main p {
+    display: block;
+}
+
+main h2 {
+    font-size: 2.5rem;
+}
+
+main h3 {
+    font-size: 1.75rem;
+}
+
+main a, main p {
+    line-height: 2rem;
+    font-size: 1.2rem
+}
+
+main a:link {
+    text-decoration: underline;
+}
+
+main a:hover {
+    font-weight: 500;
+}
+
+main a:active {
+    text-decoration: none;
+}
+
+#projects-main {
+    height: 100%;
+    background-image: linear-gradient(to bottom,rgba(40, 53, 80, 0.7), rgba(40, 53, 80, 0.9)), url(./media/daphnis-blur.png);
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: auto;
+}
+
+
+/* Styles for section and full-row divs */
+.project-section {
+    width: 100%;
+    height: 450px;
+}
+
+.project-line {
+    padding-left: 20px;
+    display: flex;
+    width: 50%;
+    height: 450px;
+}
+
+#cxm {
+    position: absolute;
+    top: 0px;
+
+}
+
+#phrase-gen {
+    position: absolute;
+    top: 470px;
+ 
+}
+
+/* Styles for the Logo and Details blocks that appear in each row */
+
+.project-line {
+    min-width: 520px;
+}
+
+.background-dark {
+    background-color: #283550;
+    float: left;
+
+}
+
+.background-light {
+    background-color: #f3f1e8;
+    color: #003;
+    float: right;
+}
+
+#cxm .background-dark {
+    float: left;
+}
+
+#cxm .background-light {
+    float: right;
+}
+
+#phrase-gen .background-dark {
+    float: right;
+}
+
+#phrase-gen .background-light {
+    float: left;
+}
+
+/* Details Class-level styling */
+
+.project-details {
+    margin: auto;
+    width: 80%;
+}
+
+.store-link {
+    display: inline-block;
+    margin-right: 30px;
+    max-width: 45%;
+}
+
+/* Figure class-level styling */
+
+figure.store-icon {
+    width: 220px;
+    height: auto;
+    margin: 0;
+    margin-left: -2px;
+}
+
+figure #git-logo {
+    width: 170px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: -2px;
+}
+
+img.store-icon {
+    width: 100%;
+}
+
+.logo-figure {
+    display: block;
+    margin: auto;
+}
+
+.logo-image {
+    height: auto;
+}
+
+/* Figure ID-level styling*/
+
+#cxm-logo {
+    border-radius: 15px;
+    width: 250px;
+}
+
+#codecademy-logo {
+    width: 350px;
+}
