@@ -25,6 +25,11 @@ img {
     height: auto;
 }
 
+img-caption, figcaption {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 500;
+}
+
 .align-left .align-right {
     display: inline-block;
 }

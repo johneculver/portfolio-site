@@ -1,0 +1,9 @@
+/* Contact Page Element Styles */
+div.contact-frame {
+    padding: 30px 20px;
+    background-color: white;
+}
+
+h2 {
+    font-size: 4rem;
+}
