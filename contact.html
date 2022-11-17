@@ -9,15 +9,16 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./style.css">
-        <link rel="stylehseet" href="./contact-styles.css">
+        <link rel="stylesheet" href="./contact-styles.css">
+        <link rel="stylesheet" href="./contact-mobile-styles.css">
         <!--Add dedicated stylsheet here-->
     </head>
     <body>
         <header>
             <div class="header-content">
-                <img id="header-logo" src="./media/logo-light-circled.png" alt="logo">
+                <a href="./index.html"><img id="header-logo" src="./media/logo-light-circled.png" alt="logo"></a>
             </div>
-            <nav class="header-content">
+            <nav class="header-content mobile-hide">
                 <ul>
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./story.html">My Story</a></li>
@@ -25,24 +26,67 @@
                     <li><a href="./contact.html">Contact</a></li>
                 </ul>
             </nav>
+            <nav class="header-content mobile-show">
+                <button class="nav-menu" onclick="hamburgerMenu(this);toggleOverlay();">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </button>
+            </nav>
+            <div class="mobile-overlay">
+                <a class="mobile-page-link" href="./index.html"><div class="mobile-page-div">Home</div></a>
+                <div class="mobile-link-line"></div>
+                <a class="mobile-page-link" href="./story.html"><div class="mobile-page-div">My Story</div></a>
+                <div class="mobile-link-line"></div>
+                <a class="mobile-page-link" href="./projects.html"><div class="mobile-page-div">Projects</div></a>
+                <div class="mobile-link-line"></div>
+                <a class="mobile-page-link" href="./contact.html"><div class="mobile-page-div">Contact</div></a>
+            </div> 
         </header>
-        <main>
-            <div class="contact-frame">
-                <h2>Reach out</h2>
-                <p>Happy to discuss product management, the intersection of music and technology, how edtech can democratize career advancemen, and more. </p>
-            </div>
-            <div class="contact-frame">LinkedIn</div>
-            <div class="contact-frame">Twitter</div>
-            <div class="contact-frame">GitHub</div>
-            <div class="contact-frame">Instagram</div>
+        <main id="contact-main">
+                <div id="contact-heading">
+                    <h1>Reach out</h1>
+                    <p>Happy to discuss product management, the intersection of music and technology, how edtech can democratize career advancement, and more. </p>
+                </div>
+            <a href="https://www.linkedin.com/in/john-culver/" target="_blank">
+                <div class="contact-frame">
+                    <figure class="social-line">
+                        <img class="social-logo" src="./media/contact-media/linkedin-logo.png" alt="LinkedIn Logo">
+                    </figure><div class="social-line social-name"><p>LinkedIn</p></div>
+                </div>
+            </a>
+            <a href="https://twitter.com/johnparrculver" target="_blank">
+                <div class="contact-frame">
+                    <figure class="social-line">
+                        <img class="social-logo" src="./media/contact-media/twitter-logo.png" alt="Twitter Logo">
+                    </figure>
+                    <div class="social-line social-name"><p>Twitter</p></div>
+                </div>
+            </a>
+            <a href="https://github.com/johneculver" target="_blank">
+                <div class="contact-frame">
+                    <figure class="social-line">
+                        <img class="social-logo" src="./media/contact-media/GitHub-Mark.png" alt="GitHub Logo">
+                    </figure>
+                    <div class="social-line social-name"><p>GitHub</p></div>
+                </div>
+            </a>
+            <a href="https://www.instagram.com/johntheproductmanager/" target="_blank">
+                <div class="contact-frame">
+                    <figure class="social-line">
+                        <img class="social-logo" src="./media/contact-media/instagram-logo.png" alt="Instagram Logo">
+                    </figure>
+                    <div class="social-line social-name"><p>Instagram</p></div>
+                </div>
+            </a>
         </main>
         <footer>
             <div id="footer-border"></div>
                 <div class="footer">
                     <span class="footer" id="footer-logo"><img src="./media/logo-dark-grey-circled.png" alt="Logo"></span>
-                    <span class="footer" id="sitemap">Sitemap</span>
                     <span class="footer" id="copyright">© 2022 John Parr-Culver</span>
                 </div>
+                <script src="./main.js"></script>
         </footer>
         <!--Add dedicated js link here-->
     </body>

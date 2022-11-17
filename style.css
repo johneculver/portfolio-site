@@ -10,6 +10,10 @@ html {
     font-size: 16px;
     font-family: 'Roboto', Arial, sans-serif;
     color: #f3f1e8;
+    background-color: #283550;
+    background-image: linear-gradient(to bottom,rgba(40, 53, 80, 0.7), rgba(40, 53, 80, 0.9)), url(./media/daphnis-blur.png);
+    background-size: fill;
+    background-position: absolute; 
 }
 
 h1 {
@@ -33,8 +37,8 @@ header {
     padding: 30px 0;
 }
 
-nav {
-    min-width: 525px;
+nav.mobile-hide {
+    min-width: 520px;
 }
 
 a {
@@ -86,28 +90,24 @@ nav ul li {
     margin: 15px;
 }
 
-/* Body Styling */
+/* Main and Body Styling */
 
 main {
     position: relative;
-    top: 80px;
     min-height: calc(100vh - 160px);
-    background-color: #283550;
-    
+    top: 80px;
 }
 
 #intro {
+    padding-top: 2rem;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     justify-items: space-evenly;
-    background-image: linear-gradient(to bottom,rgba(40, 53, 80, 0.7), rgba(40, 53, 80, 0.9)), url(./media/daphnis-blur.png);
-    background-size: fill;position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-   
 }
 
 #intro-img, #intro-text {
@@ -205,4 +205,100 @@ div.footer {
 span.footer {
     display: block;
     color: #495d86;
+}
+
+/* JavaScript Overlay Menu Reference */
+
+.mobile-overlay {
+    display: none;
+    z-index: 1;
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    background-color: #f3f1e8;
+    color: #283550;
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 0 0 1rem 1rem;
+    box-shadow: 0 0.2rem 1rem #000000;
+}
+
+
+
+/* Media Queries */
+@media (max-width:770px) {
+    /*Hide desktop nav menu*/
+    .mobile-hide {
+        display: none;
+    }
+    /*Show nav hamburger, define styling, define change function styles*/
+    .nav-menu {
+        cursor: pointer;
+        float: right;
+        padding-right: 1.5rem;
+        z-index: 2;
+        background: transparent;
+        border: none;
+        font-size:0;
+      }
+      
+      .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #f3f1e8;
+        margin: 6px 0;
+        transition: 0.4s;
+      }
+
+      .change .bar1 {
+        transform: translate(0, 11px) rotate(-45deg);
+
+      }
+      
+      .change .bar2 {
+        opacity: 0;
+
+    }
+      
+      .change .bar3 {
+        transform: translate(0, -11px) rotate(45deg);
+      }
+      
+      /*
+      .mobile-overlay {
+        position: absolute;
+        top: 80px;
+        width: 100%;
+        background-color: #f3f1e8;
+        color: #283550;
+        font-size: 2rem;
+        text-align: center;
+        border-radius: 0 0 1rem 1rem;
+        box-shadow: 0 0.2rem 1rem #000000;
+      }
+      */
+
+      .mobile-page-link {
+        line-height: 5rem;
+      }
+
+      a.mobile-page-link:hover {
+        text-decoration: none;
+      }
+
+    a.mobile-page-link:active div {
+        background-color: #DDDDD5
+      }
+
+      .mobile-link-line {
+        border: 0.5px solid #9AA8B9;
+        width: 90%;
+        margin: 0 auto;
+      }
+}
+
+@media (min-width:771px) {
+    .mobile-show {
+        display: none;
+    }
 }

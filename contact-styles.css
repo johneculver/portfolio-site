@@ -1,9 +1,74 @@
 /* Contact Page Element Styles */
-div.contact-frame {
-    padding: 30px 20px;
-    background-color: white;
+h1 {
+    font-size: 3rem;
+    font-family: 'Bitter', Times, serif;
+    line-height: 3rem;
+    padding: 0;
+    margin: 0;
 }
 
-h2 {
-    font-size: 4rem;
+
+.contact-frame, #contact-heading {
+    padding: 1rem 2rem 0 2rem;
+}
+
+div.contact-frame {
+    width: 90%;
+    margin: 1rem auto;
+    background-color: #283550;
+    border-radius: 1rem;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.social-name p {
+    font-size: 2rem;
+}
+
+.social-logo {
+    width: 6rem;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+#contact-heading {
+    width: 90%;
+    background-color: #f3f1e8;
+    color: #283550;
+    margin: 0 auto;
+    padding-top: 1.5rem;
+    padding-bottom: 0.3rem;
+    border-radius: 0 0 1rem 1rem;
+}
+
+#contact-heading p {
+    font-size: 1.2rem;
+}
+
+/* Adds styles that supercede style.css stylesheet*/
+#contact-main {
+    padding: 0 0 1.5rem 0;
+    height: 100%;
+    background-image: linear-gradient(to bottom,rgba(40, 53, 80, 0.7), rgba(40, 53, 80, 0.9)), url(./media/daphnis-blur.png);
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: auto;
+} 
+
+#contact-main a:hover {
+    text-decoration: none;
+}
+
+#contact-main a:active {
+    text-decoration: none;
+    color: #283550;
+}
+
+.contact-frame:hover {
+    background-color: #445580;
+}
+
+.contact-frame:active {
+    background-color: #D8EAFF;
 }

@@ -9,14 +9,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./index-mobile-style.css">
         <!--Add dedicated stylsheet here-->
     </head>
     <body>
         <header>
             <div class="header-content">
-                <img id="header-logo" src="./media/logo-light-circled.png" alt="logo">
+                <a href="./index.html"><img id="header-logo" src="./media/logo-light-circled.png" alt="logo"></a>
             </div>
-            <nav class="header-content">
+            <nav class="header-content mobile-hide">
                 <ul>
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./story.html">My Story</a></li>
@@ -24,6 +25,22 @@
                     <li><a href="./contact.html">Contact</a></li>
                 </ul>
             </nav>
+            <nav class="header-content mobile-show">
+                <button class="nav-menu" onclick="hamburgerMenu(this);toggleOverlay();">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </button>
+            </nav>
+            <div class="mobile-overlay">
+                <a class="mobile-page-link" href="./index.html"><div class="mobile-page-div">Home</div></a>
+                <div class="mobile-link-line"></div>
+                <a class="mobile-page-link" href="./story.html"><div class="mobile-page-div">My Story</div></a>
+                <div class="mobile-link-line"></div>
+                <a class="mobile-page-link" href="./projects.html"><div class="mobile-page-div">Projects</div></a>
+                <div class="mobile-link-line"></div>
+                <a class="mobile-page-link" href="./contact.html"><div class="mobile-page-div">Contact</div></a>
+            </div> 
         </header>
         <main>
             <section id="intro">
@@ -35,18 +52,18 @@
                     <br>
                     <p class="greeting">My name is John Parr-Culver, and I am a musician turned Product Manager. My mission is to continually develop the knowledge, agency, and vision needed to help others lead more fulfilling lives.</p>
                     <button id="story-button" class="link-button">Read my Story</button>
-            </div>
+                </div>
             </section>
         </main>
         <footer>
             <div id="footer-border"></div>
                 <div class="footer">
                     <span class="footer" id="footer-logo"><img src="./media/logo-dark-grey-circled.png" alt="Logo"></span>
-                    <span class="footer" id="sitemap">Sitemap</span>
                     <span class="footer" id="copyright">© 2022 John Parr-Culver</span>
                 </div>
+                <script src="./home-scripts.js"></script>
                 <script src="./main.js"></script>
+
         </footer>
-        <!--Add dedicated js link here-->
     </body>
 </html>

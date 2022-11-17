@@ -1,0 +1,343 @@
+/* Small Mobile Styles */
+@media only screen and (max-width:400px){
+    .mobile-title-show {
+        display: block;
+    }
+
+    .mobile-title-hide {
+        display: none;
+    }
+}
+
+/* Show hidden larger elements */
+
+@media (min-width:401px){
+    .mobile-title-hide {
+        display: block;
+    }
+}
+
+/* Mobile Styles */
+@media only screen and (max-width:640px){
+    /* Mobile Headers */
+    
+    #projects-main {
+        max-height: none;
+        min-height: auto;
+        height:954px;
+        position:relative;
+    }
+
+    #title {
+        padding-top: 2.5rem;
+        height: auto;
+        padding-left: 0;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+        text-align: center;
+        margin-block: 0;
+        margin-bottom: 0;
+        line-height: 4.5rem;
+    }
+
+    main h2 {
+        font-size: 1.6rem;
+        margin-block: 0;
+    }
+
+    main h3 {
+        font-size: 1.15rem;
+    }
+
+    /* Mobile Section Sizing and Positioning */
+
+    #title, #cxm, #phrase-gen {
+        position: static;
+        top:auto;
+        padding-top: 0;
+    }
+
+    .project-section {
+        height:auto;
+    }
+
+    .project-line {
+        width: 100%;
+        min-width: 320px;
+        height: 220px;
+    }
+
+    #cxm {
+        top: -40px;
+    }
+
+    #phrase-gen {
+        top:auto;
+    }
+
+    .mobile-platform-show, .mobile-platform-show.project-line {
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+
+    .mobile-platform-hide {
+        display: none;
+    }
+
+    /* Mobile Section Element Formatting */
+
+    .section-splitter {
+        margin: 0 auto;
+        width: 95%;
+    }
+
+   .light-border {
+        border-bottom: 2px solid rgba(243, 241, 232, 0.8);
+        z-index: 5;
+        height: 2px;
+    }
+
+    .dark-border {
+        border-bottom: 2px solid rgba(40, 53, 80, 0.4);
+    }
+
+    #codecademy-splitter {
+        width: 200px;
+    }
+
+    .border-narrow {
+        width: 60%;
+        margin-bottom: 20px;
+    }
+
+    .mobile-background-dark {
+        background-color: #283550;
+        color: #f3f1e8;
+    }
+
+    .mobile-background-light {
+        background-color: #f3f1e8;
+    }
+
+    .project-details {
+        text-align: center;
+        width: 100%;
+    }
+
+    .project-description {
+        max-width: none;
+        width: 100%;
+    }
+
+    main a, main p {
+        font-size: 1rem;
+        line-height: 1.6rem;
+    }
+
+    figure.store-icon {
+        width: 140px;
+    }
+
+    .store-link, .store-icon {
+        display: block;
+        margin: 10px auto;
+        max-width:none;
+        width: 140px;
+    }
+
+    .link-text {
+        display: none;
+    }
+    
+    #cxm-logo {
+        width:175px;
+    }
+
+    #codecademy-mobile-logo{
+        width: 280px;
+        height: auto;
+        display: block;
+    }
+
+    figure#git-logo-dark {
+        display: none;
+    }
+
+    figure#git-logo-light {
+        width: 170px;
+        height: auto;
+    }
+}
+
+
+
+/* Small Tablet Styles */
+
+@media (min-width: 641px) and (max-width:770px){
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    main h2 {
+        font-size: 1.6rem;
+    }
+
+    .project-details h2 {
+        line-height: 2rem;
+    }
+
+    main h3 {
+        font-size: 1.15rem;
+        margin-block-start: 0;
+    }
+    
+    figure.store-icon {
+        width: 140px;
+    }
+
+    main a, main p {
+        font-size: 1rem;
+        line-height: 1.6rem;
+    }
+
+    .project-details h3{
+        margin-bottom: 0;
+    }
+
+    .project-line{
+        display: block;
+        min-width:0;
+        padding-left: 0;
+        height: 300px;
+    }
+
+    .background-dark {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .background-light{
+        width: 60%;
+        padding-top: 2rem;
+    }
+
+    .store-link {
+        margin-right: 15px;
+        max-width: 44%
+    }
+
+    .cxm-link {
+        padding-top: 20px;
+    }
+
+    .logo-figure{
+        margin: 50px auto 50px auto;
+        width: 62%;
+        height: auto;
+    }
+
+    #phrase-gen {
+        top: 0;
+    }
+    /*
+    footer {
+        top: 0px;
+    }
+    */
+
+    #cxm {
+        top: 0;
+    }
+
+    #cxm-logo {
+        width: 100%;
+    }
+
+    figure #git-logo {
+        width: 120px;
+    }
+
+    #codecademy-logo {
+        width:100%;
+        height: auto;
+    }
+
+    figure {
+        margin-block-end: auto;
+        margin-block-start: auto;
+        margin-inline-end: auto;
+        margin-inline-start: auto;
+    }
+}
+
+/* Large Tablet and Small Laptop Styles */
+
+@media (max-width:1060px ) and (min-width:771px){
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    main h2 {
+        font-size: 1.8rem;
+    }
+
+    main h3 {
+        font-size: 1.3rem;
+    }
+
+    main a, main p {
+        font-size: 1rem;
+        line-height: 1.6rem;
+    }
+
+    figure.store-icon {
+        width: 175px;
+    }
+
+    .project-line{
+        display: block;
+        min-width:0;
+        padding-left: 0;
+    }
+
+    .background-dark {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .background-light{
+        width: 60%;
+        padding-top: 2rem;
+    }
+
+    .logo-figure{
+        margin: 50px auto 50px auto;
+        width: 62%;
+        height: auto;
+    }
+
+
+
+    #cxm-logo {
+        width: 100%;
+    }
+
+    #codecademy-logo {
+        width:100%;
+        height: auto;
+    }
+
+    figure {
+        margin-block-end: auto;
+        margin-block-start: auto;
+        margin-inline-end: auto;
+        margin-inline-start: auto;
+    }
+}

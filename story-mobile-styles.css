@@ -1,0 +1,47 @@
+/* Mobile Styles */
+@media (max-width:640px){
+    article {
+        width: 90%;
+        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+        font-size: 1.15rem;
+    }
+    
+    article h2 {
+        line-height: 2.5rem;
+        font-size: 2rem;
+    }
+
+    figure {
+        width: 80%;
+    
+    }
+
+    figure.align-left, figure.align-right {
+        margin:auto;
+    }
+
+    img-caption, figcaption {
+        font-weight: 500;
+        text-align: right;
+    }
+
+    .align-left, .align-right{
+        float:none;
+        margin: auto 0;
+    }
+
+    .audio {
+        display: flex;
+        align-items: center;
+    }
+
+    .audio figcaption {
+        display: block;
+        padding-right: 1rem;
+    }
+
+    audio {
+        display: block;
+        margin: auto 0;
+    }
+}
