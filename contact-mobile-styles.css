@@ -1,0 +1,30 @@
+/* Small Mobile Styles */
+@media only screen and (max-width:400px){
+    figure{
+        margin-inline-start: 0;
+        margin-inline-end: 25px;
+    }
+
+    .social-logo {
+        width: 80px;
+    }
+}
+
+/* Mobile Styles */
+@media only screen and (max-width:640px){
+    #contact-main {
+        padding-bottom:0;
+    }
+    
+    #contact-heading{
+        width:100%;
+        border-radius: 0;
+    }
+
+    div.contact-frame {
+        width:100%;
+        border-bottom: 1px solid rgba(243, 241, 232, 0.8);
+        border-radius: 0;
+        margin: 0;
+    }
+}
