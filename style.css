@@ -98,12 +98,16 @@ main {
     top: 80px;
 }
 
+#main-home {
+    display: flex;
+    align-items: center;
+}
+
 #intro {
     padding-top: 2rem;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    justify-items: space-evenly;
     top: 0;
     left: 0;
     height: 100%;

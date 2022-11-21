@@ -1,4 +1,16 @@
 /* Small Mobile Styles */
+@media only screen and (max-width:375px){
+    #projects-main {
+        height: 1070px; 
+    }
+
+    #github-line {
+        height: 340px;
+    }
+
+    
+}
+
 @media only screen and (max-width:400px){
     .mobile-title-show {
         display: block;
@@ -18,13 +30,22 @@
 }
 
 /* Mobile Styles */
+@media only screen and (min-width:376px) and (max-width:640px){
+    #projects-main {
+        height:1055px;
+    }
+
+    #github-line {
+        height: 320px;
+    }
+}
+
 @media only screen and (max-width:640px){
     /* Mobile Headers */
     
     #projects-main {
         max-height: none;
         min-height: auto;
-        height:954px;
         position:relative;
     }
 
@@ -67,6 +88,7 @@
         width: 100%;
         min-width: 320px;
         height: 220px;
+        padding-left: 0;
     }
 
     #cxm {
@@ -162,13 +184,31 @@
         display: block;
     }
 
+    #git-link {
+        width: 100%;
+    }
+
     figure#git-logo-dark {
         display: none;
     }
 
     figure#git-logo-light {
-        width: 170px;
+        width: 100%;
         height: auto;
+        display: block;
+    }
+
+    #git-logo-light a {
+        display: block;
+        width: 100%;
+    }
+
+    #git-logo-light a a {
+        width: 90%;
+    }
+
+    img#git-light {
+        width: 140px;
     }
 }
 
@@ -223,7 +263,7 @@
 
     .background-light{
         width: 60%;
-        padding-top: 2rem;
+        padding-top: 0.5rem;
     }
 
     .store-link {

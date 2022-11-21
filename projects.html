@@ -2,8 +2,19 @@
 
 <html>
     <head>
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B2JDXTNQ8B"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-B2JDXTNQ8B');
+</script>
         <title>John Parr-Culver</title>
         <meta charset="UTF-8">
+        <meta name="author" content="John Parr-Culver">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./normalize.css">
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
@@ -13,6 +24,7 @@
         <link rel="stylesheet" href="./projects-mobile-styles.css">
         <!--Add dedicated stylsheet here-->
     </head>
+    
     <body>
         <header>
             <div class="header-content">
@@ -90,12 +102,12 @@
                         <img src="./media/project-media/Codecademy_Logo.png" alt="Codecademy Logo" id="codecademy-mobile-logo" class="logo-image">
                     </figure>
                 </div>
-                <div class="background-light project-line mobile-background-dark">
+                <div class="background-light project-line mobile-background-dark" id="github-line">
                     <div class="project-details">
                         <div class="section-splitter light-border border-narrow"></div>
                         <h2>Composers' Message Generator</h2>
                         <h3>CodeCademy Learner, July 2022 - Present</h3>
-                        <div class="store-link">
+                        <div class="store-link" id="git-link">
                             <figure class="store-icon" id="git-logo-dark">
                                 <a href="https://github.com/johneculver/message_generator">
                                     <img src="./media/project-media/GitHub_Logo.png" alt="Github Logo" class="store-icon" id="git-logo">

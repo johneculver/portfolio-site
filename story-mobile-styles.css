@@ -5,11 +5,6 @@
         font-family: 'Roboto', Arial, Helvetica, sans-serif;
         font-size: 1.15rem;
     }
-    
-    article h2 {
-        line-height: 2.5rem;
-        font-size: 2rem;
-    }
 
     figure {
         width: 80%;
@@ -43,5 +38,12 @@
     audio {
         display: block;
         margin: auto 0;
+    }
+}
+
+@media only screen and (max-width:790px){
+    article h2 {
+        line-height: 2.5rem;
+        font-size: 2rem;
     }
 }
