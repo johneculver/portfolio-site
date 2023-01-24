@@ -17,6 +17,7 @@ article p {
 
 figure {
     width: 40%;
+    max-width: 490px;
     height: auto;
 }
 
