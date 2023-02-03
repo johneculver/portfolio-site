@@ -2,16 +2,17 @@
 //Transforms menu icon to X when clicked
 
 // Sets variable for menu icon
-const navMenu = document.getElementsByClassName("nav-menu");
+const navMenu = document.getElementById("nav-menu");
 
 // Sets variables to show/hide menu div
 const overlayMenu = document.querySelector(".mobile-overlay");
 
 //navMenu.addEventListener("click", hamburgerMenu);
-
-function hamburgerMenu (x) {
-    x.classList.toggle("change");
-}
+/*
+const hamburgerMenu = (e) => {
+    e.classList.toggle("change");
+    toggleOverlay();
+}*/
 
 function toggleOverlay () {
     if (overlayMenu.style.display !== "block") {
@@ -20,6 +21,11 @@ function toggleOverlay () {
             overlayMenu.style.display = "none";
         }
 }
+
+document.getElementById("nav-menu").addEventListener("click", function(){
+    navMenu.classList.toggle("change");
+    toggleOverlay();
+});
 
 /*
 function toggleMenu (e) {
